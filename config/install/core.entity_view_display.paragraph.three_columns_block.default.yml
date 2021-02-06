@@ -1,0 +1,38 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_columns_block.field_block_column_one
+    - field.field.paragraph.three_columns_block.field_block_column_three
+    - field.field.paragraph.three_columns_block.field_block_column_two
+    - paragraphs.paragraphs_type.three_columns_block
+  module:
+    - block_field
+id: paragraph.three_columns_block.default
+targetEntityType: paragraph
+bundle: three_columns_block
+mode: default
+content:
+  field_block_column_one:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_block_column_three:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+  field_block_column_two:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: block_field
+    region: content
+hidden:
+  search_api_excerpt: true

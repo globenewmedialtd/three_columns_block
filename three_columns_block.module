@@ -1,0 +1,27 @@
+<?php
+
+/**
+ * @file
+ * The Social slideshow module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Template\Attribute;
+use Drupal\file\Entity\File;
+use Drupal\image\Entity\ImageStyle;
+use Drupal\node\NodeInterface;
+use Drupal\node\Entity\Node;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\Core\StringTranslation\TranslatableMarkup;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_theme().
+ */
+function three_columns_block_theme() {
+  // Paragraphs.
+  $theme_templates['paragraph__three_columns_block__default'] = [
+    'base hook' => 'paragraph',
+  ];  
+  return $theme_templates;
+}

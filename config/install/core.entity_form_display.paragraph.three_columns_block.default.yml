@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.three_columns_block.field_block_column_one
+    - field.field.paragraph.three_columns_block.field_block_column_three
+    - field.field.paragraph.three_columns_block.field_block_column_two
+    - paragraphs.paragraphs_type.three_columns_block
+  module:
+    - social_landing_page
+id: paragraph.three_columns_block.default
+targetEntityType: paragraph
+bundle: three_columns_block
+mode: default
+content:
+  field_block_column_one:
+    weight: 1
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_block_column_three:
+    weight: 3
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+  field_block_column_two:
+    weight: 2
+    settings:
+      plugin_id: ''
+      settings: {  }
+      configuration_form: full
+    third_party_settings: {  }
+    type: block_field_default
+    region: content
+hidden:
+  created: true
+  status: true
+

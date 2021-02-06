@@ -1,0 +1,4 @@
+section.three_columns_block:
+  css:
+    theme:
+      css/three_columns_block.section.block.css: {}

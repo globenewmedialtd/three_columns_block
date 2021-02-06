@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies: {  }
+id: three_columns_block
+label: 'Three Columns Block'
+icon_uuid: null
+icon_default: null
+description: 'Three columns block'
+behavior_plugins: {  }
